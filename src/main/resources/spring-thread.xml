@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 加载配置文件 -->
+
+    <bean id="confload" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:uac.properties</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="sendconf" class="base.sendConfig">
+        <property name="p">
+            <map>
+                <entry key="gather-ip-0" value="${gather-ip-0}" />
+                <entry key="gather-port-0" value="${gather-port-0}"/>
+                <entry key="backup-directory" value="${backup-directory}"/>
+                <entry key="pool-max-capacity" value="${pool-max-capacity}" />
+                <entry key="pool-max-send-workers" value="${pool-max-send-workers}"/>
+                <entry key="record-directory" value="${record-directory}"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="runconf" class="base.RunPremeter">
+        <property name="conf">
+            <map>
+                <entry key="sessioNum" value="${sessioNum}" />
+                <entry key="cmdStep" value="${cmdStep}"/>
+                <entry key="sessionStep" value="${sessionStep}"/>
+                <entry key="gaiLv" value="${gaiLv}"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <!-- 配置线程池 -->
+    <bean id ="taskExecutor"  class ="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" >
+        <!-- 线程池维护线程的最少数量 -->
+        <property name ="corePoolSize" value ="${corePoolSize}" />
+        <!-- 线程池维护线程所允许的空闲时间 -->
+        <property name ="keepAliveSeconds" value ="${keepAliveSeconds}" />
+        <!-- 线程池维护线程的最大数量 -->
+        <property name ="maxPoolSize" value ="${maxPoolSize}" />
+        <!-- 线程池所使用的缓冲队列 -->
+        <property name ="queueCapacity" value ="${queueCapacity}" />
+    </bean>
+</beans>

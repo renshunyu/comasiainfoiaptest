@@ -1,0 +1,998 @@
+ls
+vi iap30iapserverbuildrelease.sh
+ls
+ls
+cd rensy
+ls
+cd GatherSend/
+ls
+sh start.sh uac record 30
+ls
+tail-f nohup.out 
+tail -100f nohup.out 
+ls
+tail -100f nohup.out 
+ls
+pwd
+ls
+cd rensy
+ls
+cd GatherSend
+ls
+cat start.sh 
+ps -ef|grep GatherSend
+ls
+cd record
+ls
+cd ..
+ls
+ps -ef|grep GatherSend
+kill -9 18342
+ls
+sh start.sh uac record 30
+ps -ef|grep GatherSend
+kill -9 13248
+sh start.sh uac record 30
+ps -ef|grep GatherSend
+kill -9 28440
+sh start.sh uac record 30
+ps -ef|grep GatherSend
+kill -9 4022
+sh start.sh uac record 30
+ps -ef|grep GatherSend
+kill -9 20878
+sh start.sh uac record 30
+ps -ef|grep GatherSend
+kill -9 6451
+ps -ef|grep GatherSend
+sh start.sh uac record 30
+ps -ef|grep GatherSend
+kill -9 28981
+ls
+sh start.sh uac record 30
+ps -ef|grep GatherSend
+kill -9 14420
+ls
+cd rensy
+ls
+ls
+cd rensy]
+\cd rensy
+ls
+cd host
+ls
+cat host.txt 
+l
+s
+ls
+ps
+cd ..
+ls
+sudo tcpdump -i em0 -s 65535 udp port 54323
+sudo tcpdump -i em1 -s 65535 udp port 54323
+sudo tcpdump -i em1 -s 65535 tcp port 54322
+sudo tcpdump -i em1 -s 65535 tcp port 54323
+sudo tcpdump -i em1 -s 65535 tcp port 54323 -w rensy.cap
+ll
+ ll rensy.cap
+strings rensy.cap 
+sudo tcpdump -i em1 -s 65535 tcp port 54323
+sudo tcpdump -i em1 -s 65535 udp port 54323
+sudo  tcpdump -vv -s 0 -i em1 udp port 54323
+netstat -anop |grep 514
+ls
+ls
+cd rensy
+ls
+tcpdump -i lo -s 65535 
+sudo tcpdump -i lo -s 65535 
+sudo tcpdump -i lo -s 65535 |grep 514
+sudo tcpdump -i lo -s 65535 udp port 514
+sudo tcpdump -i lo -s 65535 tcp port 514
+ls
+cd GatherSend/
+ls
+cd host/
+ls
+cat 16.txt
+cd ..
+ls
+cd ..
+ls
+cd host/
+ls
+cat cmd.txt 
+ls
+cd autobuild/
+ls
+ls
+cd autobuild/
+ls
+vi iap_aus_build.sh
+ls
+cd ..
+ls
+cd svnproject
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd iap_aus/
+ls
+cd elastic
+ls
+cd ori_log_persistence_es/
+ls
+mvn package -Dmaven.test.skip=true
+java -version
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd autobuild/
+ls
+vi iap_aus_build.sh
+ls
+vi iap_aus_build.sh
+cd /usr/java/
+ls
+cd rensy
+ls
+cd ..
+ls
+cd ..
+ls
+cd usr
+ls
+cd jaba
+cd java
+ls
+mkdir ddd
+sudo mkdir aaa
+ls
+sudo tar -zcvf aaa
+ls
+cd aaa
+touch kkk
+sudo touch kkk
+ls
+cd ..
+ls
+sudo tar -zcvf aaa
+sudo tar -zcvf aaa aaa.tar.gz
+ls
+sudo tar -zcvf aaa.tar.gz aaa
+ls
+sudo rm -rf aaa  aaa.tar.gz
+ls
+tar -zxvf jdk1.8.0_121.tar.gz
+ls
+sudo tar -zxvf jdk1.8.0_121.tar.gz
+ls
+sudo rm -rf jdk1.8.0_121.tar.gz
+ls
+cd ..
+ls
+cd aiuap30/
+ls
+cd ..
+ls
+cd zjy
+ls
+cd iap_server
+ls
+cd ..
+ls
+cd ..
+ls
+find . -name pythonimport
+find . -name python
+cd /subversion/binds/swig/
+pwd
+ll
+cd aiuap30/
+ll
+cd iap_server/
+ll
+cd iap_server
+ll
+cd ..
+ll
+cd rensy/
+ll
+cd ..
+l
+cd ..
+ll
+pwd
+ll
+cd test/
+cd test
+ll
+d
+ls
+cd autobuild
+ls
+cat gather_serverbuild.sh 
+ls
+cd ..
+ls
+cd autobuild/
+ls
+cd gather_server_ftp-xml_deploy.sh
+cat gather_server_ftp-xml_deploy.sh
+s
+ls
+cd ..
+ls
+cd autobuild/
+ls
+vi gather_serverbuild.sh 
+ls
+vi gather_server_ftp-xml_deploy.sh
+ls
+java -version
+vi gather_serverbuild.sh
+ls
+cd ..
+ls
+cd /usr/java
+ls
+cd ..
+ls
+cd ~
+ls
+cd autobuild/
+ls
+cd ..
+ls
+cd gather20
+ls
+cd ..
+ls
+cd aiuap30/
+ls
+cd gather30/
+ls
+ls
+cd autobuild
+ls
+cat iap_aus_build.sh
+ls
+ls
+cd gather
+cd gather3
+ls
+cd ..
+ls
+cd cd
+cd
+cd aiuap30/
+ls
+cd gather30/
+ls
+cd ap_gather_server_ftp-xml
+ls
+cd ap_gather_server_fort
+ls
+cd ..
+s
+ls
+cd ap_gather_server_ftp-xml
+ls
+cd ..
+ls
+cd
+ls
+cd svnproject/
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd ap_gather_server/
+ls
+ant release
+ls
+cd ..
+ls
+cd ..
+ls
+cd
+cd autobuild/
+ls
+cat gather_serverbuild.sh
+ls
+cd aiuap30
+ls
+cd gather30
+ls
+cd ap_gather_server_tcp-xml
+ll
+cd ap_gather_serve_tcp-xml 
+vi ap_gather_serve_tcp-xml 
+ls
+cd ap_gather_server_fort
+ls
+cd ..
+mkdir ap_gather_server_ftp-xml
+ls
+cd ap_gather_server_ftp-xml/
+ls
+cd ..
+ls
+cd ..
+ls
+cd svnproject/
+ls
+cd program30
+ls
+bu
+cd builddir/
+ls
+cd ap_gather_server
+ls
+mvn package -Dmaven.test.skip=true
+csh start.sh 
+clear
+ls
+cat start.sh 
+csh start.sh 
+csh start.sh ap_gather_server_ftp
+ls
+csh start.sh ap_gather_server_ftp
+cd .
+cd ..
+ls
+cd ap_gather_server/
+ls
+ant 
+cd svnproject
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd ap_gather_server
+ls
+ant 
+ll
+cd lib
+ll
+cd es
+ll
+cd ..
+ls
+ll -a
+vi .bash_profile
+ls
+cd svnproject
+ls
+cd program
+cd ..
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd ap_gather_server/
+ls
+ant
+java -version
+cd ..
+ls
+ll -a
+source .bash_profile
+java -version
+cd svnproject/
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd ap_gather_server/
+ls
+ant
+ls
+cd ..
+ls
+cd ap_gather_server/
+ls
+ant
+ll
+ant
+cd /home/aiuap/aiuap30/aiuap-replay/20140625
+ll
+more 1403680666962_36_session
+more _161403682377387_replay
+   ll
+more 403680666962_36_session
+more 1403680666962_36_session
+ll
+cd /
+cd 
+ll
+cd tomcat_iap40
+ll
+cd logs
+ll
+more catalina.out
+tail -f catalina.out 
+ls
+ls
+cd aiuap30/
+ls
+cd aiuap-replay/
+ls
+cd 20140625
+ls
+strings _161403682377387_replay
+ls
+cd ..
+ls
+cd config/
+ls
+cat conf.properties
+ls
+cd ..
+ls
+cd 20140625
+ls
+pwd
+ls
+cd svnproject
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd ap_gather_server/
+ls
+ant
+ls
+vi /etc/
+ls
+last
+cd aiuap30
+ls
+cd gather30/
+ls
+cd ap_gather_server_ftp-xml
+ls
+cd ..
+ls
+rm -rf ap_gather_server_ftp-xml/
+ls
+cd ..
+ls
+cd gather30/
+ls
+pwd
+cd autobuild/
+ls
+cat gather_server_ftp-xml_deploy.sh
+cd ..
+vi .bash_profile
+ls
+cd autobuild
+ls
+vi gather_server_ftp-xml_deploy.sh
+cd ..
+ls -a
+vi .bash_profile
+cd aiuap30/
+ls
+cd aiuap-replay/
+ls
+ps -ef |grep replay
+cd config/
+ks
+s
+ls
+cat conf
+cat conf.properties 
+q
+ls
+ls
+cd autobuild
+ls
+vi gather_server_ftp-xml_deploy.sh
+ls
+cd zjy
+ls
+cd ..
+ls
+cd autobuild/
+ls
+vi gather_server_ftp-xml_deploy.sh 
+ls
+cd ..
+pwd
+cd svnproject/
+ls
+cd program30
+ls
+cd program/
+ls
+mkdir ap_standardize_server
+ls
+cd ..
+pwd
+ls
+cd builddir/
+ls
+cd ..
+ls
+cd ..
+ls
+cd autobuild/
+ls
+cd ..
+ls
+cd svnproject
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd ap_standardize_server
+ls
+cat build.log 
+cd ..
+ls
+cd ap_gather_server
+ls
+cat build.log 
+cd ..
+ls
+cd ap_standardize_server
+ls
+java -version
+cd ..
+ls
+cd ..
+ls
+cd program/
+ls
+pwd
+cd ap_standardize_server
+ls
+pwd
+svn up /home/aiuap/svnproject/program30/program/ap_standardize_server
+ls
+cd svnproject
+ls
+cd program30
+ls
+cd program/
+ls
+cd ap_standardize_server
+ls
+cd ..
+ls
+cd ap_gather_server
+ls
+cd ..
+ls
+cd ap_standardize_server
+ls
+svn co http://10.1.198.30/svn/UAPPROGRAM/products/ailkiap30/program/ap_standardize_server
+ls
+rm -rf ap_standardize_server
+svn co http://10.1.198.30/svn/UAPPROGRAM/products/ailkiap30/program/ap_standardize_server/
+ls
+cd ..
+ls
+cd ap_validate_server
+ls
+cd ..
+ls
+cd ap_standardize_server/
+ls
+rm -rf ap_standardize_server
+svn co http://10.1.198.30/svn/UAPPROGRAM/products/ailkiap30/program/ap_standardize_server/*
+cd ..
+ls
+rm -rf ap_standardize_server
+svn co http://10.1.198.30/svn/UAPPROGRAM/products/ailkiap30/program/ap_standardize_server/
+ls
+cd ap_standardize_server/
+ls
+cd ..
+ls
+cd ..
+ls
+cd builddir/
+ls
+cd ap_standardize_server
+ls
+ant
+ls
+cd svnproject
+ls
+cd program30
+ls
+cd program/
+ls
+cd ap_gather_server/
+ls
+cd ..
+ls
+cd ap_standardize_server
+ls
+vi start.sh
+cd ..
+ls
+cd ap_standardize_server
+ls
+cd ..
+ls
+cd ..
+ls
+cd builddir/
+ls
+cd ap_standardize_server
+ls
+ant
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd ~
+ls
+cd zjy
+ls
+cd ..
+ls
+cd svnproject
+ls
+cd program30
+ls
+cd program/
+ls
+svn co http://10.1.198.30/svn/UAPPROGRAM/products/ailkiap30/program/elastic/jdbc2es
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+cd autobuild/
+ls
+cd ..
+ls
+cd svnproject/
+ls
+cd program30
+ls
+cd builddir/
+ls
+cd ap_standardize_server
+l
+ls
+ant
+ls
+pwd
+mkdir etl
+ll
+cd etl
+ll
+unzip data-integration.zip
+ll
+cd data-integration
+ll
+cd workspace/
+ll
+cd soc_report/
+ll
+cd app
+ll
+java -version
+cd ../..
+cd
+ll
+cd /usr
+ll
+cd java
+ll
+cd jdk
+cd jdk1.7.0_80/
+ll
+pwd
+ll
+cd 
+ll
+cd etl
+ll
+cd data-integration
+ll
+cd workspace/
+pwd
+/home/aiuap/etl/data-integration/wor
+ll
+cd s
+ll
+cd s
+cd soc_report/
+ll
+cd app
+ll
+./startup.sh
+sh startup.sh 
+ll
+cd ../
+ll
+cd ../
+ll
+sudo chmod -R 777 soc_report/
+cd soc_report/
+ll
+cd app/
+ll
+sh startup.sh 
+cd ../..
+ll
+cd ../..
+ll
+cd ../..
+ll
+cd etl
+cd aiuap
+ll
+cd etl
+sudo chmod -R 777ll
+ll
+sudo chmod -R 777 data-integration
+cd data-integration
+ll
+cd workspace/
+ll
+cd soc_report/
+ll
+cd app
+ll
+sh startup.sh 
+more startup.sh 
+cd /usr/java
+ll
+cd jdk1.7.0_80/
+ll
+cd bin
+ll
+cd ..
+ll
+cd /home/aiuap
+ll
+cd etl
+ll
+cd data-integration
+ll
+cd workspace/
+ll
+cd soc
+ll
+cd soc_report/
+ll
+cd app
+ll
+sh startup.sh 
+more startup.sh 
+[aiuap@bj12ps0020 app]$ sh startup.sh 
+[aiuap@bj12ps0020 app]$ more startup.sh 
+JAVA_HOME=/usr/java/jdk1.7.0_80
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+/home/aiuap/etl/data-integration/kitchen.sh -file=/home/aiuap/etl/data-integration/workspace/soc_report/app/app_job.kjb
+ps -ef | grep start
+ps -ef | grep app_job
+kill -9 2389
+kill -9 2392
+kill -9 2442
+kill -9 2443
+kill -9 2444
+kill -9 2445
+kill -9 2447
+ps -ef | grep app_job
+]
+ls
+cd autobuild/
+ls
+cat  iap_aus_build.sh  
+export JAVA_HOME=/usr/java/jdk1.8.0_121
+export M2_HOME=/usr/java/apache-maven-3.3.9
+export PATH=$(echo $PATH |sed 's/jdk1.6.0_31/jdk1.8.0_121/g')
+export PATH=$(echo $PATH |sed 's/apache-maven-3.2.5/apache-maven-3.3.9/g')
+export CLASSPATH=$(echo $CLASSPATH |sed 's/jdk1.6.0_31/jdk1.8.0_121/g')
+ls
+cd ..
+ls
+cd autobuild/
+ls
+cd
+cd svnproject/
+ls
+cd program
+cd ..
+cd program30
+ls
+cd builddir/
+ls
+cd iap_aus/
+ls
+cd data_syn/
+ls
+mvn package -Dmaven.test.skip=true
+ls
+cd target/
+ls
+cd ..
+ls
+cd package
+ls
+cd ..
+l
+cd ..
+ls
+cd standardize
+ls
+netstat -anop |grep 2181
+sudo getenforce
+cd
+sudo useradd aus
+sudo passwd aus
+ls
+su - aus
+sudo su - aus
+ls
+cd autobuild
+ls
+cat iap_aus_build.sh 
+ls
+sudo mv /usr/bin/java /usr/bin/javabak
+sudo su - aus
+sudo mv /usr/bin/javabak /usr/bin/java
+whereis java
+sudo su - aus
+sudo mv /usr/bin/java /usr/bin/javabak
+sudo su - aus
+ll
+cd etl
+cll
+ll
+cd data-integration
+ll
+cd workspace/
+ll
+cd soc
+ll
+cd soc
+cd soc_report/
+ll
+cd app
+ll
+sh startup.sh 
+ps -ef | grep app_job
+ps -ef | grep startup.sh
+sh startup.sh 
+more startup.sh 
+cd /usr/java/jdk1.7.0_80
+/home/aiuap/etl/data-integration/kitchen.sh -file=/home/aiuap/etl/data-integration/workspace/soc_report/app/app_job.kjb
+ps -ef | grep startup.sh
+ps -ef | grep app_job
+kill -9 28024
+ps -ef | grep app_job
+kill -9  27966
+kill -9  27969
+kill -9  28019
+kill -9  28020
+kill -9  28021
+kill -9  28022
+ps -ef | grep app_job
+ls
+cd svnproject
+ls
+cd program30
+ls
+cd program/
+ls
+cd ..
+ls
+cd builddir/
+ls
+cd jdbc2es
+ls
+cd target/
+ll
+java -jar jdbc2es-0.0.1-SNAPSHOT.jar
+ls
+ls log
+la
+tail -f test.log
+ls
+ps -ef|grep java
+ps -ef|grep  jdbc2es
+jps
+ps -ef|grep jdbc2es-0.0.1-SNAPSHOT.jar
+ps -ef|grep java -jar
+ps -ef|grep jar
+clear
+ps -ef|grep jdbc2es-0.0.1-SNAPSHOT
+kill -9 22240
+top
+ls
+java -jar -Dspring.config.location=./application.yml
+ls
+cd zjy
+ls
+cd zjy
+ls
+cd ..
+ls
+ls -a
+vi .bash_profile
+ls
+cd aiuap30/
+ls
+cd tomcat_iap_solr_dataimport_rm
+ls
+cd webapps/
+ls
+cd solr_data_import
+ls
+cd WEB-INF/
+ls
+cd classes/
+ls
+cat iap-business.properties 
+ls
+cd usr/java
+cd /usr/java
+ls
+cd ..
+cd ~
+ls
+ls -a 
+vi .bash_profile
+source .bash_profile
+java -version
+ls
+cd zjy
+ls
+cd reportc/
+ls
+ant
+ls
+cd target/
+ls
+cd build/
+ls
+cd web
+cd WEB-INF/
+ls
+cd ..
+ls
+mkdir dist
+ls
+cd ..
+ls
+ant
+ls
+cd target/
+ls
+cd dist/
+ls
+cd ..
+ls
+ls -a
+vi .bash_profile
+source .bash_profile
+java -version
