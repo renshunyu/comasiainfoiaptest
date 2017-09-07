@@ -13,7 +13,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class StringDeal {
-	Logger log = Logger.getLogger("StringDeal.class");
+	private Logger log = Logger.getLogger("StringDeal.class");
 	UUID uuid = UUID.randomUUID();
 	String s ;
 	public StringDeal(){
@@ -41,6 +41,23 @@ public class StringDeal {
 		String shijian = formater.format(date);
 		log.info(shijian+"开始");
 		str = str.replaceAll("<MAIN_ACCOUNT_NAME>.*?</MAIN_ACCOUNT_NAME>", "<MAIN_ACCOUNT_NAME>" + acct + "</MAIN_ACCOUNT_NAME>");
+		str = str.replaceAll("<OPERATE_TIME>.*?</OPERATE_TIME>", "<OPERATE_TIME>" + shijian + "</OPERATE_TIME>");
+		str = str.replaceAll("<IDR_CREATION_TIME>.*?</IDR_CREATION_TIME>", "<IDR_CREATION_TIME>" + shijian + "</IDR_CREATION_TIME>");
+		str = str.replaceAll("<SESSION_BEGIN_TIME>.*?</SESSION_BEGIN_TIME>", "<SESSION_BEGIN_TIME>"+shijian+"</SESSION_BEGIN_TIME>");
+		str = str.replaceAll("<SESSION_END_TIME>.*?</SESSION_END_TIME>", "<SESSION_END_TIME>"+shijian+"</SESSION_END_TIME>");
+		log.info(shijian+"结束");
+		return str;
+
+	}
+
+	public String strdeal(String str,String acct,String ip){
+		Date date = new Date();
+		SimpleDateFormat formater = new SimpleDateFormat();
+		formater.applyPattern("yyyy-MM-dd HH:mm:ss");
+		String shijian = formater.format(date);
+		log.info(shijian+"开始");
+		str = str.replaceAll("<MAIN_ACCOUNT_NAME>.*?</MAIN_ACCOUNT_NAME>", "<MAIN_ACCOUNT_NAME>" + acct + "</MAIN_ACCOUNT_NAME>");
+		str = str.replaceAll("<OBJECT_DEVICE_IP>.*?</OBJECT_DEVICE_IP>", "<OBJECT_DEVICE_IP>" + ip + "</OBJECT_DEVICE_IP>");
 		str = str.replaceAll("<OPERATE_TIME>.*?</OPERATE_TIME>", "<OPERATE_TIME>" + shijian + "</OPERATE_TIME>");
 		str = str.replaceAll("<IDR_CREATION_TIME>.*?</IDR_CREATION_TIME>", "<IDR_CREATION_TIME>" + shijian + "</IDR_CREATION_TIME>");
 		str = str.replaceAll("<SESSION_BEGIN_TIME>.*?</SESSION_BEGIN_TIME>", "<SESSION_BEGIN_TIME>"+shijian+"</SESSION_BEGIN_TIME>");

@@ -14,7 +14,7 @@ import java.util.UUID;
  * Created by Administrator on 2017/4/23.
  */
 public class sendfun {
-    Logger log = Logger.getLogger("sendfun.class");
+    private Logger log = Logger.getLogger("sendfun.class");
     ClassPathXmlApplicationContext tt = new ClassPathXmlApplicationContext("spring-thread.xml");
 
     public void doit() throws IOException, InterruptedException {
@@ -34,7 +34,10 @@ public class sendfun {
 
         List acct = fl.readFromFile(new File("acct.txt"));
         String ac = (String) acct.get((int)(Math.random()*(acct.size())));
+        List ips = fl.readFromFile(new File("ip.txt"));
+        String ip = (String) ips.get((int)(Math.random()*(ips.size())));
         log.info("登录主账号为："+ac);
+        log.info("服务器ip为："+ip);
 
 
 
@@ -45,7 +48,7 @@ public class sendfun {
         sendConfig sc = new sendConfig();
         slo.initSendPool(sc.sendconf());
         StringDeal sd = new StringDeal();
-        slo.tcpSend(sd.strdeal4(sd.strdeal(session,ac)));
+        slo.tcpSend(sd.strdeal4(sd.strdeal(session,ac,ip)));
         /*slo.endSendPool();*/
         Thread.sleep((long) (1+Math.random()*(3000-1+1)));
         for (int i=0 ;i<num ;i++){
@@ -54,14 +57,14 @@ public class sendfun {
             log.info("frow"+l.get(frow));
             //slo.tcpSend(sd.strdeal(l.get(frow).toString()));
             /*slo.initSendPool(sc.sendconf());*/
-            slo.tcpSend(sd.strdeal5(sd.strdeal4(sd.strdeal(cmd,ac)),l.get(frow).toString()));
+            slo.tcpSend(sd.strdeal5(sd.strdeal4(sd.strdeal(cmd,ac,ip)),l.get(frow).toString()));
             /*slo.endSendPool();*/
             log.info(i+"cmd");
             Thread.sleep((long) (1+Math.random()*(3000-1+1)));
 
         }
         /*slo.initSendPool(sc.sendconf());*/
-        slo.tcpSend(sd.strdeal4(sd.strdeal(sesend,ac)));
+        slo.tcpSend(sd.strdeal4(sd.strdeal(sesend,ac,ip)));
         slo.endSendPool();
         log.info("endSendPool");
     }
