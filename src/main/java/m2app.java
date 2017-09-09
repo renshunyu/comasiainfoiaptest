@@ -28,6 +28,7 @@ public class m2app {
         FileToList fl = new FileToList();
         List l = fl.readFromFile(new File("hiscmd.txt"));
         List acct = fl.readFromFile(new File("acct.txt"));
+        List ips = fl.readFromFile(new File("ip.txt"));
 
 
 
@@ -50,6 +51,7 @@ public class m2app {
         ra.setL(l);
         ra.setSlo(slo);
         ra.setAcct(acct);
+        ra.setIps(ips);
         //Future f = pool.submit(ra);
 
 

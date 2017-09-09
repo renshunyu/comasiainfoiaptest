@@ -16,8 +16,12 @@ public class my2runnable implements Runnable {
     String sesend;
 
 
-    List l,acct;
+    List l,acct,ips;
     SendLogOper slo ;
+
+    public void setIps(List ips) {
+        this.ips = ips;
+    }
 
     public void setAcct(List acct) {
         this.acct = acct;
@@ -49,8 +53,10 @@ public class my2runnable implements Runnable {
         sendfun sf = new sendfun();
         int arow = (int)(Math.random()*(acct.size()));
         String ac = (String) acct.get(arow);
+        int iprow = (int)(Math.random()*(ips.size()));
+        String ip = (String) ips.get(iprow);
         try {
-            sf.doit(this.session,this.cmd,this.sesend,ac,this.l,this.slo);
+            sf.doit(this.session,this.cmd,this.sesend,ac,ip,this.l,this.slo);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

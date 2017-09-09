@@ -150,4 +150,47 @@ public class sendfun {
         log.info("发送会话结束日志结束------");
         log.info("endSendPool");
     }
+    public void doit(String session,String cmd,String sesend,String ac,String ip,List l,SendLogOper slo) throws IOException, InterruptedException {
+        FileToString fs = new   FileToString();
+        File df = new File(".");
+        log.info("qwer");
+        log.info(df.getAbsolutePath());
+        log.info("asdf");
+        FileToList fl = new FileToList();
+        int num = (int)(1+Math.random()*(20-1+1));
+        int frow;
+
+
+
+        log.info("session");
+        log.info("cmd");
+        log.info("sesend");
+        log.info("登录服务器ip为：-----------" + ip );
+
+        StringDeal sd = new StringDeal();
+        slo.tcpSend(sd.strdeal4(sd.strdeal(session,ac,ip)));
+        RunPremeter runconf = (RunPremeter) tt.getBean("runconf");
+        /*slo.endSendPool();*/
+        Thread.sleep((long) (1+Math.random()*(3000-1+1)));
+        log.info("命令最大时间间隔为：-----"+Integer.parseInt(runconf.getConf().getProperty("cmdStep"))+"-------");
+        for (int i=0 ;i<num ;i++){
+            frow = (int)(Math.random()*(l.size()));
+            log.info("frow"+frow);
+            log.info("frow"+l.get(frow));
+            //slo.tcpSend(sd.strdeal(l.get(frow).toString()));
+            /*slo.initSendPool(sc.sendconf());*/
+            log.info("登录主账号为：-----------" + ac );
+            slo.tcpSend(sd.strdeal5(sd.strdeal4(sd.strdeal(cmd,ac,ip)),l.get(frow).toString()));
+            log.info("登录主账号为：-----------" + ac );
+            /*slo.endSendPool();*/
+            log.info(i+"cmd");
+            Thread.sleep((long) (1+Math.random()*(Integer.parseInt(runconf.getConf().getProperty("cmdStep"))-1+1)));
+
+        }
+        /*slo.initSendPool(sc.sendconf());*/
+        log.info("发送会话结束日志开始------");
+        slo.tcpSend(sd.strdeal4(sd.strdeal(sesend,ac,ip)));
+        log.info("发送会话结束日志结束------");
+        log.info("endSendPool");
+    }
 }
